@@ -1,0 +1,21 @@
+// Make this directory play nice with syncthing
+// If this is synched through syncthing across multiple locations,
+// make sure only one location uses git
+
+// Don't track git related stuff
+.git
+
+// Don't track any latex auxillary files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latemk
+*.fls
+*.lof
+*.log
+*.run.xml
+*.run.toc
+*.out
+*.synctex.gz
+*.xdv

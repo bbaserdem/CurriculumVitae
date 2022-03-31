@@ -1,0 +1,49 @@
+#-------------------#
+#-----WHITELIST-----#
+#-------------------#
+
+# Ignore all by default
+*
+
+# Include ignore files
+!/.gitignore
+!/.stignore
+
+# Include github actions
+!/.github
+!/.github/**
+
+# Include all the tex files in the base directory
+!/*.tex
+!/*.pdf
+
+# Include all bibliography files
+!/reference
+!/reference/*.bib
+
+# Include all tex files in the different parts
+!/parts
+!/parts/*.tex
+
+# Include all media files; by default only images.
+!/figures
+!/figures/**
+
+# Include all markdown files, independent of location
+!/**.md
+
+# Ignore temporary latexmk files again just for good measure
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latemk
+*.fls
+*.lof
+*.log
+*.run.xml
+*.run.toc
+*.out
+*.pdf
+*.synctex.gz
+*.xdv
