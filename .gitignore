@@ -5,11 +5,13 @@
 # Ignore all by default
 *
 
-# Include ignore files
+# Include important files
 !/.gitignore
+!/.gitmodules
 !/.stignore
+!/.latexmkrc
 
-# Include github actions
+# Include github actions, if provided
 !/.github
 !/.github/**
 
