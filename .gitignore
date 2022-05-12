@@ -29,6 +29,11 @@
 !/figures
 !/figures/**
 
+# Include styles
+!/styles
+!/styles/*.cls
+!/styles/*.sty
+
 # Include all markdown files, independent of location
 !/**.md
 
