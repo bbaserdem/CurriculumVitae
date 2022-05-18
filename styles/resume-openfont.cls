@@ -31,6 +31,16 @@
 \RequirePackage{styles/raleway-font}
 % make underlying constants: credits to Alex Beattie for noticing and suggesting fix
 \RequirePackage{ulem}
+\usepackage[
+  backend       = biber,
+  style         = apa,
+  maxbibnames   = 4,
+  minbibnames   = 4,
+  maxcitenames  = 1,
+  mincitenames  = 1,
+  url           = false,
+]{biblatex}
+\addbibresource{reference/publications.bib}
 %--------------------------------------------------------------
 % Reformatting default sections
 % section
