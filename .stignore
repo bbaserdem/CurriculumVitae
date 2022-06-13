@@ -19,3 +19,25 @@
 *.out
 *.synctex.gz
 *.xdv
+
+// Just in case; block everything
+*
+
+// Don't track pdf files within the main body; move them to documents subdirectory
+
+// Only get pdf's from production directory
+!/production
+!/production/*.pdf
+
+// Get only bibliography files from references here
+!/reference
+!/reference/*.bib
+
+// Get style and class files from classes
+!/styles
+!/styles/*.sty
+!/styles/*.cls
+
+// Get parts and info from info directory and subdirectories
+!/info
+!/info/**.tex
