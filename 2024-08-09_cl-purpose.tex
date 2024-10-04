@@ -1,0 +1,83 @@
+% Based on; TeX Cover Letter Template by Sid Lacy
+
+% EDIT info.tex, body.tex
+
+\documentclass[12pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{fontawesome5}
+\usepackage{eso-pic}
+\usepackage{charter}
+\usepackage[
+  backend=biber,
+  style=chem-biochem,
+  maxcitenames = 3,
+  mincitenames = 3,
+  sorting = ydnt,
+  sortcites = true,
+  defernumbers = true,
+  maxbibnames = 99,
+  giveninits = true,
+  uniquename = false
+]{biblatex}
+\addbibresource{reference/publications.bib}
+
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+\definecolor{gr}{RGB}{225,225,225}
+
+% Include function defines for self info
+\input{info/batuhan.tex}
+
+\begin{document}
+
+% Shaded header banner
+\AddToShipoutPictureBG*{%
+    \color{gr}
+    \AtPageUpperLeft{\rule[-1.3in]{\paperwidth}{1.3in}}
+}
+
+% Header
+\begin{center}
+  {\fontsize{20}{0}\selectfont\scshape \myname { } \mytitle}
+
+  \vspace{0.15in}
+  {\fontsize{25}{0}\selectfont\scshape Statement of Purpose}
+  \vspace{0.15in}
+
+  \href{mailto:\myemail}{\faEnvelope\enspace \myemail}\hfill
+\href{https://linkedin.com/in/\mylinkedin}{\faLinkedinIn\enspace\mylinkedin}\hfill
+\href{https://www.github.com/\mygithub}{\faGithub\enspace\mygithub}\hfill
+\href{tel:\myphone}{\faPhone\enspace \myphone}\hfill
+\faMapMarker\enspace \mylocation
+\end{center}
+
+\vspace{0.2in}
+
+% Opening block
+\today\\
+
+% EDIT: Main body
+\vspace{-0.1in}\setlength\parindent{24pt}
+\noindent
+\input{body/ps_power.tex}
+
+% Closer
+\vspace{0.1in}
+
+\vfill
+
+\begin{flushright}
+\closer,
+
+%\vspace{-0.1in}\includegraphics[width=1.5in]{sig.png}\vspace{-0.1in}
+
+\myname\\
+\mytitle
+\end{flushright}
+
+\printbibliography[heading=none]
+
+\end{document}
