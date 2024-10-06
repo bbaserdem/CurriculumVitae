@@ -11,6 +11,10 @@
 !/.stignore
 !/.latexmkrc
 
+# Include all archived files
+!/archive
+!/archive/**
+
 # Include github actions, if provided
 !/.github
 !/.github/**
@@ -43,6 +47,10 @@
 # Include text bodies
 !/body
 !/body/*.tex
+
+# Include information bodies
+!/info
+!/info/*.tex
 
 # Include all markdown files, independent of location
 !/**.md

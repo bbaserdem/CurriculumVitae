@@ -1,0 +1,147 @@
+% !TEX program = xelatex
+
+% All preamble is in resumeProfessionalTemplate-vaishanth.sty
+\documentclass[letterpaper,11pt]{article}
+\usepackage{styles/resume-professional}
+
+% Function inputs for info
+\input{info/batuhan.tex}
+
+\begin{document}
+\nocite{*}
+
+%----------HEADING----------
+\begin{center}
+    {\huge \myname, \mytitle}
+    \\
+    \vspace{2pt} 
+    \faMobile \enspace
+    { \myphone } ~ 
+    \textbullet
+    \faEnvelope \enspace
+    \href{mailto:[\myemail]}{\color{blue}{\myemail}} ~ 
+    \textbullet
+    \faHome \enspace
+    {\mylocation} ~ 
+    \textbullet
+    \faMap \enspace
+    {Green Card Holder}
+    \\
+    \faLinkedin \enspace
+    \href{[https://www.linkedin.com/in/\mylinkedin]}{\color{blue}{\mylinkedin}} ~
+    \textbullet
+    \faGithub \enspace
+    \href{[https://github.com/\mygithub]}{\color{blue}{\mygithub}} ~
+    \textbullet
+    \faTwitter \enspace
+    \href{[https://twitter.com/bbaserdem]}{ \color{blue}{bbaserdem}}
+    \vspace{-7pt}
+\end{center}
+ 
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    % Stony Brook 
+    \resumeSubheading
+      {Stony Brook University}
+      {Stony Brook, NY, USA}
+      {Ph.D. Physics}
+      {August 2014 - August 2023}
+      \resumeItemListStart
+        \resumeItem{
+          Dissertation title:
+          Studying Neural Computation Through Connectomics
+        }
+        \resumeItem{
+          Relevant courses:
+          Group Theory, Statistical Mechanics, Quantum Field Theory, General Relativity
+        }
+        \resumeItem{
+          Worked as a Teaching Assistant for both graduate and undergraduate courses.
+        }
+      \resumeItemListEnd
+
+    \vspace{-4pt}
+
+    \resumeSubheading
+      {Boğaziçi University}
+      {Istanbul, Turkey}
+      {Bsc Physics}
+      {2010 - 2014}
+      \resumeItemListStart
+        \resumeItem{
+          Relevant courses:
+          Group Theory, Statistical Mechanics, C Programming, Information Theory
+        }
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  \vspace{-10pt}
+
+ %-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Post-Doctorate Researcher}
+      {Cold Spring Harbor, NY, USA} 
+      {Cold Spring Harbor Laboratory, Koulakov Laboratory}
+      {August 2023 - September 2024}
+      \resumeItemListStart
+        \resumeItem{Organized, reformatted and documented large imaging datasets collected by different laboratories to have a unified interface through MATLAB.}
+        \resumeItem{Designed and implemented data analysis pipeline that denoises and aligns large imaging datasets in Python.}
+        % LEFT IT HERE
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Graduate Researcher}
+      {Cold Spring Harbor, NY, USA} 
+      {Cold Spring Harbor Laboratory, Koulakov Laboratory}
+      {August 2016 - August 2023}
+      \resumeItemListStart
+        \resumeItem{Conducted research with PhD advisor Prof. Alexei Koulakov}
+        \resumeItem{Participated in peer discussions, and presentations to wider academic audience.}
+        \resumeItem{Leveraged reinforcement learning (RL), machine learning (ML), statistical analysis, and optimization.}
+        \resumeItem{Designed and programmed simulations for self-assembly of genetic networks, and published our findings.~\cite{connclone}}
+        \resumeItem{Collaborated on a multi-laboratory project, and produced statistical analysis methods which lead to the discovery of structure in the mouse brain.~\cite{mapseq}}
+        \resumeItem{Designed a model environment that simulates animal behavioral learning using fluid mechanics and reinforcement learning.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Intern}
+      {Portland, OR, NY} 
+      {Oregon Health \& Science University} 
+      {January 2013}
+      \resumeItemListStart
+            \resumeItem{Assisted neuro-monitoring during spinal surgeries under Dr. Ilker Yaylali M.D., Ph.D.}
+            \resumeItem{Analysed historic patient data to evaluate the efficacy of neuro-monitoring during spinal surgeries in preventing permanent nerve damage.}
+      \resumeItemListEnd  
+
+    % copy and paste above resumeSubheading block to add more 
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+%-----------SKILLS-----------
+\section{SKILLS}
+  \begin{itemize}[leftmargin=0in, label={}] \small{ \item{
+    \textbf{\normalsize{Programming:}}{\normalsize{
+      Python, C, C++, R, MATLAB, PyTorch, Unix, Linux, Git, AWS, OpenFOAM
+    }} \\ \vspace{1.2pt}  
+    \textbf{\normalsize{Machine Learning:}}{\normalsize{
+      Reinforcement Learning, Unsupervised Learning, Transformer Neural Networks
+    }} \\ \vspace{1.2pt}
+      
+    \textbf{\normalsize{Academic:}}{\normalsize{
+      Linear Algebra, Differential Geometry, Statistical Mechanics, Smoothed Particle Hydrodynamics, Quantum Field Theory
+    }}
+
+     % copy and paste above textbf block to add more 
+  } }\end{itemize}
+ \vspace{-16pt}
+
+%-----------Publications---------------
+%
+\printbibliography[title = PUBLICATIONS]
+      
+\vspace{-8pt}
+
+\end{document}
+
