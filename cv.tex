@@ -1,6 +1,4 @@
 % !TEX program = xelatex
-
-% All preamble is in resumeProfessionalTemplate-vaishanth.sty
 \documentclass[letterpaper,11pt]{article}
 \usepackage{styles/resume-professional}
 
@@ -17,10 +15,10 @@
     \\
     \vspace{2pt} 
     \faMobile \enspace
-    { \myphone } ~ 
+    {\myphone} ~ 
     \textbullet
     \faEnvelope \enspace
-    \href{mailto:[\myemail]}{\color{blue}{\myemail}} ~ 
+    \href{mailto:\myemail}{\color{blue}{\myemail}} ~ 
     \textbullet
     \faHome \enspace
     {\mylocation} ~ 
@@ -29,14 +27,22 @@
     {Green Card Holder}
     \\
     \faLinkedin \enspace
-    \href{[https://www.linkedin.com/in/\mylinkedin]}{\color{blue}{\mylinkedin}} ~
+    \href{https://www.linkedin.com/in/\mylinkedin}{\color{blue}{\mylinkedin}} ~
     \textbullet
     \faGithub \enspace
-    \href{[https://github.com/\mygithub]}{\color{blue}{\mygithub}} ~
+    \href{https://github.com/\mygithub}{\color{blue}{\mygithub}} ~
     \textbullet
     \faTwitter \enspace
-    \href{[https://twitter.com/bbaserdem]}{ \color{blue}{bbaserdem}}
+    \href{https://twitter.com/bbaserdem}{ \color{blue}{bbaserdem}}
     \vspace{-7pt}
+\end{center}
+
+%-----------INTRO-------------
+\begin{center}
+Research scientist in Neuroscience with Physics background,
+experienced with using Reinforcement Learning and Machine Learning to model the brain and animal behavior.
+Interested in conducting research and developing ML systems for complex problems.
+
 \end{center}
  
 %-----------EDUCATION-----------
@@ -54,8 +60,7 @@
           Studying Neural Computation Through Connectomics
         }
         \resumeItem{
-          Relevant courses:
-          Group Theory, Statistical Mechanics, Quantum Field Theory, General Relativity
+          Studied reinforcement learning, machine learning, statistical analysis, and optimization under Prof. Alexei Koulakov.
         }
         \resumeItem{
           Worked as a Teaching Assistant for both graduate and undergraduate courses.
@@ -67,7 +72,7 @@
     \resumeSubheading
       {Boğaziçi University}
       {Istanbul, Turkey}
-      {Bsc Physics}
+      {B.Sc. Physics}
       {2010 - 2014}
       \resumeItemListStart
         \resumeItem{
@@ -82,31 +87,27 @@
  %-----------EXPERIENCE-----------
 \section{EXPERIENCE}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {Post-Doctorate Researcher}
-      {Cold Spring Harbor, NY, USA} 
-      {Cold Spring Harbor Laboratory, Koulakov Laboratory}
-      {August 2023 - September 2024}
-      \resumeItemListStart
-        \resumeItem{Organized, reformatted and documented large imaging datasets collected by different laboratories to have a unified interface through MATLAB.}
-        \resumeItem{Designed and implemented data analysis pipeline that denoises and aligns large imaging datasets in Python.}
-        % LEFT IT HERE
-      \resumeItemListEnd
-
+    % CSHL Graduate
     \resumeSubheading
       {Graduate Researcher}
       {Cold Spring Harbor, NY, USA} 
       {Cold Spring Harbor Laboratory, Koulakov Laboratory}
       {August 2016 - August 2023}
       \resumeItemListStart
-        \resumeItem{Conducted research with PhD advisor Prof. Alexei Koulakov}
-        \resumeItem{Participated in peer discussions, and presentations to wider academic audience.}
-        \resumeItem{Leveraged reinforcement learning (RL), machine learning (ML), statistical analysis, and optimization.}
-        \resumeItem{Designed and programmed simulations for self-assembly of genetic networks, and published our findings.~\cite{connclone}}
-        \resumeItem{Collaborated on a multi-laboratory project, and produced statistical analysis methods which lead to the discovery of structure in the mouse brain.~\cite{mapseq}}
-        \resumeItem{Designed a model environment that simulates animal behavioral learning using fluid mechanics and reinforcement learning.}
+        \resumeItem{Developed and trained reinforcement learning models interfacing with fluid dynamics to simulate odor navigation tasks in-silico; successfully reproduced known animal behavior in a non-supervised setting.}
+        \resumeItem{Used machine learning and developed statistical analysis pipeline in a multi-laboratory collaboration, which lead to the discovery of previously unknown structure in the mouse brain.~\cite{mapseq}}
+        \resumeItem{Designed simulations of self-assembly of genetic networks, demonstrating a possible method for cloning neural tissue.~\cite{connclone} Optimized the runtime of the simulations by 20-fold, allowing the work to be extended to larger networks and solidifying our findings.}
       \resumeItemListEnd
-
+    % CSHL Postdoc
+    \resumeSubheading
+      {Post-Doctorate Researcher}
+      {Cold Spring Harbor, NY, USA} 
+      {Cold Spring Harbor Laboratory, Koulakov Laboratory}
+      {August 2023 - September 2024}
+      \resumeItemListStart
+        \resumeItem{Developed Python-based pipelines to analyze and align large-scale imaging datasets, improving data efficiency across multiple labs. Applied machine learning techniques for image processing and data denoising.}
+      \resumeItemListEnd
+    % OHSU intern
     \resumeSubheading
       {Research Intern}
       {Portland, OR, NY} 
@@ -117,31 +118,24 @@
             \resumeItem{Analysed historic patient data to evaluate the efficacy of neuro-monitoring during spinal surgeries in preventing permanent nerve damage.}
       \resumeItemListEnd  
 
-    % copy and paste above resumeSubheading block to add more 
   \resumeSubHeadingListEnd
 \vspace{-12pt}
+
 %-----------SKILLS-----------
 \section{SKILLS}
-  \begin{itemize}[leftmargin=0in, label={}] \small{ \item{
-    \textbf{\normalsize{Programming:}}{\normalsize{
-      Python, C, C++, R, MATLAB, PyTorch, Unix, Linux, Git, AWS, OpenFOAM
-    }} \\ \vspace{1.2pt}  
-    \textbf{\normalsize{Machine Learning:}}{\normalsize{
-      Reinforcement Learning, Unsupervised Learning, Transformer Neural Networks
-    }} \\ \vspace{1.2pt}
-      
-    \textbf{\normalsize{Academic:}}{\normalsize{
-      Linear Algebra, Differential Geometry, Statistical Mechanics, Smoothed Particle Hydrodynamics, Quantum Field Theory
-    }}
 
-     % copy and paste above textbf block to add more 
-  } }\end{itemize}
- \vspace{-16pt}
+  \begin{multicols}{2}
+    \begin{tabular}{ p{5.4cm} p{14.3cm}}
+      \textbf{Programming languages}    & Python, C, C++, R, MATLAB \\
+      \textbf{Machine Learning}         & Reinforcement Learning, Unsupervised Learning, Transformer Neural Networks \\
+      \textbf{Tools and Platforms}         & PyTorch, Unix, Linux, Git, AWS, OpenFOAM \\
+      \textbf{Data Analysis \& Modelling}         & Statistical Analysis, Linear Algebra, Differential Geometry, Fluid Mechanics \\
+    \end{tabular}
+  \end{multicols}
 
 %-----------Publications---------------
 %
 \printbibliography[title = PUBLICATIONS]
-      
 \vspace{-8pt}
 
 \end{document}

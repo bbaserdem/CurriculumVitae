@@ -3,7 +3,21 @@
 % Author : Vaishanth
 % License : MIT
 %------------------------
-% Edited to compile in
+% Edited to compile in xelatex with texlive distribution
+
+% Bibliography for my publications
+\usepackage[
+    backend=biber,
+    style=phys,
+    maxnames = 3,
+    minnames = 3,
+    sorting=ydnt,
+    sortcites=true,
+    defernumbers=true,
+    giveninits=true,
+    uniquename=false
+]{biblatex}
+\addbibresource{reference/publications.bib}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -14,27 +28,14 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage[english]{babel}
+\usepackage{csquotes}
 \usepackage{tabularx}
 \usepackage{fontawesome5}
 \usepackage{multicol}
 \usepackage{graphicx}
-\usepackage[
-    backend=biber,
-    style=chem-biochem,
-    maxcitenames = 3,
-    mincitenames = 3,
-    sorting=ydnt,
-    sortcites=true,
-    defernumbers=true,
-    maxbibnames=99,
-    giveninits=true,
-    uniquename=false
-]{biblatex}
-\addbibresource{reference/publications.bib}
-%\setmainfont{Times New Roman}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
-
+% Removed due to xelatex
 %\input{glyphtounicode}
 
 \RequirePackage{tikz}
@@ -74,7 +75,7 @@
 
 % serif
 \usepackage{CormorantGaramond}
-\usepackage{charter}
+\usepackage{XCharter}
 
 % \pagestyle{fancy}
 % \fancyhf{}  % clear all header and footer fields
@@ -98,17 +99,17 @@
 
 % Sections formatting
 \titleformat{\section}
-    {   \color{airforceblue}
-        \vspace{-4pt}
-        \scshape
-        \raggedright
-        \large
-        \bfseries
-    } %Format
-    {} % Label
-    {0em} % Separator
-    {} % Before code
-    [\color{black}\titlerule \vspace{-5pt}] % After code
+  { \color{airforceblue}
+    \vspace{-4pt}
+    \scshape
+    \raggedright
+    \large
+    \bfseries
+  } %Format
+  {} % Label
+  {0em} % Separator
+  {} % Before code
+  [\color{black}\titlerule \vspace{-5pt}] % After code
 
 % Ensure that generate pdf is machine readable/ATS parsable
 %\pdfgentounicode=1
@@ -123,17 +124,16 @@
 }
 
 \newcommand{\classesList}[4]{
-    \item\small{
-        {#1 #2 #3 #4 \vspace{-2pt}}
+  \item\small{
+    {#1 #2 #3 #4 \vspace{-2pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{\large#1} & \textbf{\small #2} \\
-      \textit{\large#3} & \textit{\small #4} \\
-      
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\large#1} & \textbf{\small #2} \\
+    \textit{\large#3} & \textit{\small #4} \\  
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -174,5 +174,4 @@
 
 \newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
 
-%\usepackage{fontspec}
-
+\usepackage{fontspec}
