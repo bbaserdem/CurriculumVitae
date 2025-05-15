@@ -1,0 +1,96 @@
+% !TEX program = xelatex
+\documentclass[12pt]{letter}
+\usepackage{styles/simple-coverletter}
+
+% Function inputs for info
+\input{info/batuhan.tex}
+\input{info/ey.tex}
+
+\begin{document}
+
+% Shaded header banner
+\AddToShipoutPictureBG{%
+  \color{gr}
+  \AtPageUpperLeft{\rule[-1.3in]{\paperwidth}{1.3in}}
+}
+
+% Header
+\begin{center}
+  {\fontsize{28}{0}\selectfont\scshape \myname, \mytitle} \\
+  \vspace{0.1in}
+  \href{mailto:\myemail}{\faEnvelope\enspace \myemail}\hfill
+  \href{https://linkedin.com/in/\mylinkedin}{\faLinkedinIn\enspace\mylinkedin}\hfill
+  \href{tel:\myphone}{\faPhone\enspace \myphone}\hfill
+  \faMapMarker\enspace \mylocation
+\end{center}
+
+\vspace{0.2in}
+
+% Opening block
+\today\vspace{0.1in}\\
+
+\vspace{-0.1in}\greeting\ \recipient, at \company \\
+
+% Body
+\vspace{-0.1in}\setlength\parindent{24pt}
+\noindent
+
+I am excited to apply for the AI \& Machine Learning Engineer, Senior
+Consulting position at EY. (1558202)
+I believe the set of skills I cultivated make me uniquely great fit
+for this job position.
+
+I believe my skills make me a great match for this opening.
+I have done research in ML and AI for my Ph.D. degree, and I
+extensively coded in Python and MATLAB.
+Data analysis and the mathematical models that build ML has been part
+of my education, and I am strong in both application and theory of
+these methods.
+In my free time, I have been working with Generative AI models and
+LLMs, and been learning how to fine tune them.
+Also, as a hobby, I have written and collaborated to firmware projects in C++.
+
+My main interest is mathematical modelling of complex systems,
+and I worked as a research scientist in computational neuroscience
+during my studies.
+The main focus of my research has been understanding how the brain
+works by using Machine Learning and AI,
+and working on understanding how AI models process data.
+I have build data analysis pipelines from scratch to process brain imaging data,
+and have build animal behavior models using AI that replicated animal behavior.
+I have a strong background in mathematics and physics, and have
+strong programming skills.
+I am comfortable working in both low level and high level coding environments;
+having experience building AI models from scratch and using well
+established codebases, such as PyTorch.
+
+A unique skill I bring is communicating to a wide audience.
+During my academic studies, I had to collaborate across different
+fields and cultures.
+I am able to work across technical divides and communicate with colleagues.
+This often allowed me to be the bridge between my advisor and other
+laboratory members in communicating deliverables,
+and I created a collaborative environment.
+Having worked in Quantitative Neuroscience while having a Physics
+background also allowed me to develop technical communication skills.
+I often was in a position where there was a skill gap between my
+laboratory and our collaborator's skills; in math and biology.
+I developed the skills to communicate the needed technical details to
+people of different backgrounds.
+
+I am very excited to apply for the AI \& Machine Learning Engineer.
+I would greatly appreciate the opportunity for an interview.
+If I can provide further details, feel free to contact me.
+Thank you for your time and consideration.
+
+% Closer
+\vspace{0.1in}
+\vfill
+
+\begin{flushright}
+  \closer, \\
+  \myname\\
+  \mytitle
+\end{flushright}
+
+\end{document}
