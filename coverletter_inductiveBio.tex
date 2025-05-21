@@ -1,0 +1,109 @@
+% !TEX program = xelatex
+\documentclass[12pt]{letter}
+\usepackage{styles/simple-coverletter}
+
+% Bibliography for publications
+\usepackage[
+  backend=biber,
+  style=phys,
+  maxnames = 3,
+  minnames = 3,
+  sorting=ydnt,
+  sortcites=true,
+  defernumbers=true,
+  giveninits=true,
+  uniquename=false
+]{biblatex}
+\addbibresource{reference/publications.bib}
+
+% Function inputs for info
+\input{info/batuhan.tex}
+\input{info/inductiveBio.tex}
+
+\begin{document}
+
+% Shaded header banner
+\AddToShipoutPictureBG{%
+  \color{gr}
+  \AtPageUpperLeft{\rule[-1.3in]{\paperwidth}{1.3in}}
+}
+
+% Header
+\begin{center}
+  {\fontsize{28}{0}\selectfont\scshape \myname, \mytitle} \\
+  \vspace{0.1in}
+  \href{mailto:\myemail}{\faEnvelope\enspace \myemail}\hfill
+  \href{https://linkedin.com/in/\mylinkedin}{\faLinkedinIn\enspace\mylinkedin}\hfill
+  \href{tel:\myphone}{\faPhone\enspace \myphone}\hfill
+  \faMapMarker\enspace \mylocation
+\end{center}
+
+\vspace{0.2in}
+
+% Opening block
+\today\vspace{0.1in}\\
+
+\vspace{-0.1in}\greeting\ \recipient \\
+
+% Body
+\vspace{-0.1in}\setlength\parindent{24pt}
+\noindent
+
+The mission of Inductive Bio is very exciting to me.
+My main scientific interest is modelling complex systems using ML to
+obtain deeper understanding of such systems.
+It's very exciting to see Inductive Bio bring this aspect to
+computational chemistry.
+
+During my research at Cold Spring Harbor Laboratory, I was in
+Koulakov Laboratory where our
+main focus was on olfaction.
+While I haven't seen this discussed within the olfaction community often,
+I developed the sense that drug discovery and olfaction is deeply linked.
+Both of these fields require modelling of receptor-to-chemical interactions.
+Working out the dimensionality of chemicals is highly complex, and
+the reason why olfaction is still an unsolved sense. (As opposed to
+sight or hearing.)
+
+The most interesting research to come out of the Koulakov Laboratory,
+in my opinion, is
+DeepNose~\cite{deepnose};
+an encoder-decoder neural network that runs convolution on 3D images
+of molecules to predict smell percepts of chemicals.
+While I did not work directly in this project due to my grant obligations,
+I was involved with discussions on the architecture and the
+implementation of this project.
+I always believed the encoding of DeepNose would contain
+information that is crucial to predict receptor-to-chemical interactions.
+This was demonstrated when DeepNose's architecture was very
+successful in predicting water solubility in early stages of testing
+the network.
+Inductive Bio is working on this problem, and I would love the
+oppurtunity to pursue this line of practical research.
+
+I would love to hear more about Inductive Bio, and believe my
+experience in building and deploying ML on similar problembs could be valuable.
+My degree is in physics, and while I worked in a very
+interdisciplinary lab during my research,
+my main background is a strong understanding of mathematics.
+I have a deep love for modelling complex dynamical systems, and my strong
+grasp of linear algebra transfers really well to ML.
+I am also well versed in communicating scientists of varying
+backgrounds, having collaborated with scientists and engineers in an
+interdisciplinary environment.
+
+Thank you for your time and consideration.
+% Closer
+
+\vspace{0.1in}
+\vfill
+
+\begin{flushright}
+  \closer, \\
+  \myname\\
+  \mytitle
+\end{flushright}
+
+\printbibliography[heading = none]
+
+\end{document}
