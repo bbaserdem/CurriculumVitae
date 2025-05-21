@@ -1,0 +1,182 @@
+% !TEX program = xelatex
+\documentclass[letterpaper,11pt]{article}
+\usepackage{styles/resume-professional}
+
+% Function inputs for info
+\input{info/batuhan.tex}
+
+\begin{document}
+% To force all papers to show up
+\nocite{*}
+
+%----------HEADING----------
+\begin{center}
+  {\huge \myname, \mytitle}
+  \\
+  \vspace{2pt}
+  \faMobile \enspace
+  {\myphone} ~
+  \textbullet
+  \faEnvelope \enspace
+  \href{mailto:\myemail}{\color{blue}{\myemail}} ~
+  \textbullet
+  \faHome \enspace
+  {\mylocation} ~
+  \textbullet
+  \faMap \enspace
+  {Green Card Holder}
+  \\
+  \faLinkedin \enspace
+  \href{https://www.linkedin.com/in/\mylinkedin}{\color{blue}{\mylinkedin}} ~
+  \textbullet
+  \faGithub \enspace
+  \href{https://github.com/\mygithub}{\color{blue}{\mygithub}} ~
+  \textbullet
+  \faTwitter \enspace
+  \href{https://twitter.com/bbaserdem}{ \color{blue}{bbaserdem}}
+  \vspace{-7pt}
+\end{center}
+
+%-----------INTRO-------------
+\begin{center}
+  Research scientist in Neuroscience with Physics background,
+  experienced with using Reinforcement Learning (RL) and Machine
+  Learning (ML) to model olfactory system.
+  Interested in conducting research and developing ML systems for
+  novel and complex problems.
+
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+\resumeSubHeadingListStart
+% CSHL Graduate
+\resumeSubheading
+{Graduate Researcher}
+{Cold Spring Harbor, NY, USA}
+{Cold Spring Harbor Laboratory, Koulakov Laboratory}
+{2016 - 2023}
+\resumeItemListStart
+\resumeItem{
+  \textbf{Participated in research discussions}
+  on utilizing ML for predicting properties of molecules from 3D
+molecular structure.}
+\resumeItem{
+  \textbf{Developed and trained RL models}
+  interfacing with fluid dynamics to simulate odor navigation
+  tasks in-silico; successfully reproduced known animal behavior in a
+non-supervised setting.}
+\resumeItem{
+  \textbf{Built ML and statistical analysis pipelines}
+  in collaboration with multiple laboratories, leading to
+  the discovery of previously unknown structural patterns in the mouse
+brain through large-scale data analysis.~\cite{mapseq}}
+\resumeItem{
+  \textbf{Designed and scaled simulations of genetic network self-assembly},
+  achieving a 20$\times$ runtime optimization
+  to enable larger simulations, which validated key hypotheses in
+neural tissue modeling.~\cite{connclone}}
+\resumeItemListEnd
+% CSHL Postdoc
+\resumeSubheading
+{Post-Doctorate Researcher}
+{Cold Spring Harbor, NY, USA}
+{Cold Spring Harbor Laboratory, Koulakov Laboratory}
+{2023 -2024}
+\resumeItemListStart
+\resumeItem{
+  \textbf{Developed advanced Python pipelines}
+  to process
+  and align large-scale imaging datasets, streamlining data workflows
+across multiple laboratories and improving analysis efficiency.}
+\resumeItem{
+  \textbf{Applied ML algorithms for image processing}
+  and data denoising, enhancing data quality and
+consistency for complex imaging projects.}
+\resumeItemListEnd
+% AI Resident
+\resumeSubheading
+{AI Fellowship}
+{Lowell, VT, USA}
+{Monastic Academy For the Preservation of Life on Earth (MAPLE)}
+{2024 - 2025}
+\resumeItemListStart
+\resumeItem{
+  \textbf{Participated in AI safety studies}
+on aligning AI with Buddhism.}
+\resumeItemListEnd
+% OHSU intern
+\resumeSubheading
+{Research Intern}
+{Portland, OR, USA}
+{Oregon Health \& Science University}
+{January 2013}
+\resumeItemListStart
+\resumeItem{Supported intraoperative neuro-monitoring during spinal
+  surgeries, conducting analysis on patient data to assess the
+effectiveness of neuro-monitoring techniques in reducing nerve damage risks.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+\resumeSubHeadingListStart
+% Stony Brook
+\resumeSubheading
+{Stony Brook University}
+{Stony Brook, NY, USA}
+{Ph.D. Physics}
+{August 2014 - August 2023}
+\resumeItemListStart
+\resumeItem{
+  Dissertation title:
+  Studying Neural Computation Through Connectomics
+}
+\resumeItem{
+  Studied RL, ML, statistical analysis, and optimization under Prof.
+  Alexei Koulakov.
+}
+\resumeItem{
+  Worked as a Teaching Assistant for both graduate and undergraduate courses.
+}
+\resumeItemListEnd
+
+\vspace{-4pt}
+
+\resumeSubheading
+{Boğaziçi University}
+{Istanbul, Turkey}
+{B.Sc. Physics}
+{2010 - 2014}
+\resumeItemListStart
+\resumeItem{
+  Relevant courses:
+  Group Theory, Statistical Mechanics, C Programming, Information Theory
+}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-10pt}
+%-----------SKILLS-----------
+\section{SKILLS}
+
+\begin{multicols}{2}
+  \begin{tabular}{ p{5.4cm} p{14.3cm}}
+    \textbf{Programming languages}    & Python, C, C++, R, MATLAB \\
+    \textbf{Machine Learning}         & Reinforcement Learning,
+    Unsupervised Learning, Transformer Neural Networks \\
+    \textbf{Tools and Platforms}         & PyTorch, Unix, Linux, Git,
+    Docker, AWS, OpenFOAM, Generative AI \\
+    \textbf{Data Analysis \& Modelling}         & Statistical
+    Analysis, Linear Algebra, Differential Geometry, Fluid Mechanics \\
+  \end{tabular}
+\end{multicols}
+
+%-----------Publications---------------
+%
+\printbibliography[title = PUBLICATIONS]
+\vspace{-8pt}
+
+\end{document}
