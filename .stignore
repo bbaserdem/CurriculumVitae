@@ -1,43 +1,6 @@
-// Make this directory play nice with syncthing
-// If this is synched through syncthing across multiple locations,
-// make sure only one location uses git
+// Overrides to generic ignoring for the CurriculumVitae folder
 
-// Don't track git related stuff
-.git
+// Copy the structure of the production directory, all the pdf's
+!/CurriculumVitae/production/*
 
-// Don't track any latex auxillary files
-*.aux
-*.bbl
-*.bcf
-*.blg
-*.fdb_latemk
-*.fls
-*.lof
-*.log
-*.run.xml
-*.run.toc
-*.out
-*.synctex.gz
-*.xdv
-
-// Just in case; block everything
-*
-
-// Don't track pdf files within the main body; move them to documents subdirectory
-
-// Only get pdf's from production directory
-!/production
-!/production/*.pdf
-
-// Get only bibliography files from references here
-!/reference
-!/reference/*.bib
-
-// Get style and class files from classes
-!/styles
-!/styles/*.sty
-!/styles/*.cls
-
-// Get parts and info from info directory and subdirectories
-!/info
-!/info/**.tex
+// Everything else is either an auxillary file, or kept in VCS by git
