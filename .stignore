@@ -1,6 +1,6 @@
 // Overrides to generic ignoring for the CurriculumVitae folder
 
 // Copy the structure of the production directory, all the pdf's
-!/CurriculumVitae/production/**
+!/Present/CurriculumVitae/production/**
 
 // Everything else is either an auxillary file, or kept in VCS by git

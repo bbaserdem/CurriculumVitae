@@ -10,6 +10,8 @@
 !/.gitmodules
 !/.stignore
 !/.latexmkrc
+!/flake.nix
+!/flake.lock
 
 # Include all archived files
 !/archive
@@ -55,18 +57,40 @@
 # Include all markdown files, independent of location
 !/**.md
 
-# Ignore temporary latexmk files again just for good measure
+# LaTeX artifacts
 *.aux
-*.bbl
-*.bcf
-*.blg
-*.fdb_latemk
-*.fls
-*.lof
 *.log
-*.run.xml
-*.run.toc
 *.out
-*.pdf
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.idx
+*.ind
+*.ilg
+*.fls
+*.fdb_latexmk
 *.synctex.gz
+*.nav
+*.snm
+*.vrb
+*.dvi
 *.xdv
+*.pdf
+
+# Node
+node_modules/
+.pnpm-store/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+.uv/
+
+# Nix
+result
+result-*
+.direnv/
