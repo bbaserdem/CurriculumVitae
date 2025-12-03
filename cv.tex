@@ -1,5 +1,5 @@
 % !TEX program = xelatex
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 \usepackage{styles/resume-professional}
 
 % Function inputs for info
@@ -9,9 +9,9 @@
 
 %----------HEADING----------
 \begin{center}
-  {\huge \myname, \mytitle}
+  {\Large \myname, \mytitle}
   \\
-  \vspace{2pt}
+  \vspace{0pt}
   \faMobile \enspace
   {\myphone} ~
   \textbullet
@@ -32,7 +32,7 @@
   \textbullet
   \faTwitter \enspace
   \href{https://twitter.com/bbaserdem}{ \color{blue}{bbaserdem}}
-  \vspace{-7pt}
+  \vspace{-9pt}
 \end{center}
 
 %-----------INTRO-------------
@@ -48,6 +48,20 @@
 %-----------EXPERIENCE-----------
 \section{EXPERIENCE}
 \resumeSubHeadingListStart
+% Skyfi
+\resumeSubheading
+{Software Engineer}
+{Austin, TX, USA}
+{SkyFi}
+{2025}
+\resumeItemListStart
+\resumeItem{\textbf{Developed analytical toolkits for image detection}
+  to use in geospatial imaging analytical toolkit, using low level
+interaction with modern AI toolkits.}
+\resumeItem{\textbf{Created maintainable codebase} for analytical analysis,
+ensuring usability of the codebase for collaborations across disciplines.}
+\resumeItemListEnd
+
 % CSHL Graduate
 \resumeSubheading
 {Graduate Researcher}
@@ -68,6 +82,7 @@ brain through large-scale data analysis.~\cite{mapseq}}
   to enable larger simulations, which validated key hypotheses in
 neural tissue modeling.~\cite{connclone}}
 \resumeItemListEnd
+
 % CSHL Postdoc
 \resumeSubheading
 {Post-Doctorate Researcher}
@@ -82,6 +97,7 @@ across multiple laboratories and improving analysis efficiency.}
   processing} and data denoising, enhancing data quality and
 consistency for complex imaging projects.}
 \resumeItemListEnd
+
 % AI Resident
 \resumeSubheading
 {AI Fellowship}
@@ -92,20 +108,21 @@ consistency for complex imaging projects.}
 \resumeItem{\textbf{Participated in AI safety studies} on aligning AI
 with Buddhism.}
 \resumeItemListEnd
+
 % OHSU intern
-\resumeSubheading
-{Research Intern}
-{Portland, OR, USA}
-{Oregon Health \& Science University}
-{January 2013}
-\resumeItemListStart
-\resumeItem{Supported intraoperative neuro-monitoring during spinal
-  surgeries, conducting analysis on patient data to assess the
-effectiveness of neuro-monitoring techniques in reducing nerve damage risks.}
-\resumeItemListEnd
+% \resumeSubheading
+% {Research Intern}
+% {Portland, OR, USA}
+% {Oregon Health \& Science University}
+% {January 2013}
+% \resumeItemListStart
+% \resumeItem{Supported intraoperative neuro-monitoring during spinal
+%   surgeries, conducting analysis on patient data to assess the
+% effectiveness of neuro-monitoring techniques in reducing nerve damage risks.}
+% \resumeItemListEnd
 
 \resumeSubHeadingListEnd
-\vspace{-12pt}
+\vspace{-8pt}
 
 %-----------EDUCATION-----------
 \section{EDUCATION}
@@ -130,7 +147,21 @@ effectiveness of neuro-monitoring techniques in reducing nerve damage risks.}
 }
 \resumeItemListEnd
 
-\vspace{-4pt}
+% AI Resident
+\resumeSubheading
+{Gauntlet AI}
+{Austin, TX, USA}
+{AI Challenger}
+{2025}
+\resumeItemListStart
+\resumeItem{\textbf{Participated in AI assisted coding challenge} on
+AI coding incubator.}
+\resumeItem{\textbf{Developed 9 applications in 10 weeks}, leveraging
+AI for coding and research into new coding disciplines.}
+\resumeItem{\textbf{Collaborated in developing new workflows} with
+  people of different backgrounds; accelerating AI assisted development
+processes.}
+\resumeItemListEnd
 
 \resumeSubheading
 {Boğaziçi University}
@@ -145,7 +176,7 @@ effectiveness of neuro-monitoring techniques in reducing nerve damage risks.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
-\vspace{-10pt}
+\vspace{-8pt}
 %-----------SKILLS-----------
 \section{SKILLS}
 
@@ -164,6 +195,6 @@ effectiveness of neuro-monitoring techniques in reducing nerve damage risks.}
 %-----------Publications---------------
 %
 \printbibliography[title = PUBLICATIONS]
-\vspace{-8pt}
+\vspace{-10pt}
 
 \end{document}
